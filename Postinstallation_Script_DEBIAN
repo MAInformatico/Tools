@@ -1,0 +1,8 @@
+#INSTALACION DE IDES PARA C++ DEPURADORES ETC
+apt-get install gimp clamtk gcc gcc-c++
+#COMPLEMENTOS CHAT, COMPRESORES
+apt-get install unrar p7zip p7zip-plugins youtube-dl vlc
+#INSTALACION DE GESTOR DE CORREO Y PLUGINS PARA AUDIO Y PELICULAS
+apt-get install thunderbird gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg libdvdread libdvdnav
+#INSTALACION DE LA SUITE OFIMATICA LIBREOFFICE 
+apt-get install libreoffice-writer libreoffice-calc libreoffice-base libreoffice-impress libreoffice-langpack-es chromium wget;
