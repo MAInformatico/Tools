@@ -6,7 +6,7 @@ UrgentBackup.sh
                 So if we need to format our hard drive and we don't want forget to copy this hidden folders. This script will help you.
 The source code needs to type your personal user on your Linux system and also the destiny path for your copy.
 
-Postinstallation_<version>.sh:
+Postinstallation_<version>:
                   Scripts to automate the installation of the most common packages used in our Linux system
                   
                   There're two versions:
