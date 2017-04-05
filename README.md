@@ -17,3 +17,9 @@ Postinstallation<version>:
 Information.sh
                 Gives you some information about your system like hardware, network, distro and kernel version etc.
                 This script creates 6 files divided by: techincal information of your system like serial number, hardware, network, processor information, user information, distro and kernel version.
+
+ejecutar.sh
+              This script execute the initial process to enable symfony on your local computer. In this case the path is on the Netbeans Projects folder. Just edit this path and put the local path of your project using this structure:              
+            php "your path" console server:start
+            
+
