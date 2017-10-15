@@ -1,8 +1,8 @@
-# Execute it as root
 rm script.txt;
-apt-get update -y > script.txt; apt-get upgrade -y > script.txt; #storing execution results
-bleachbit --clean apt.*
-#filtering a log file
-sed -i ".bak" 'beginning_filter_sentences' /var/directory/file.log;
-rm /var/directory/file.bak; #deleting bak file (if you want)
-mpack -s "Updates" /root/script.txt yourmail; #sending it by email
+apt-get update -y > script.txt; sudo apt-get upgrade -y > script.txt;
+bleachbit --clean apt.*;
+sed -i".bak" '/RA/d' /var/log/router.log;
+rm /var/log/*.bak;
+mpack -s "Updates" /root/script.txt your_email@email.com;
+mpack -s "Router logs" /var/log/router.log your_email@email.com;
+
