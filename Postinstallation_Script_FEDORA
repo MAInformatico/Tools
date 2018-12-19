@@ -1,8 +1,8 @@
-#INSTALACION DE IDES PARA C++ DEPURADORES ETC
-dnf install gimp clamtk gcc gcc-c++
-#COMPLEMENTOS CHAT, COMPRESORES
+#INSTALLING IDES, DEBUGGERS, ANTIVIRUS AND FIREWALL
+dnf install gimp clamtk gcc gcc-c++ ufw
+#COMPRESSORS AND OTHER TOOLS
 dnf install unrar p7zip p7zip-plugins youtube-dl vlc
-#INSTALACION DE GESTOR DE CORREO Y PLUGINS PARA AUDIO Y PELICULAS
+#MAIL CLIENT AND MULTIMEDIA PLUGINS
 dnf install thunderbird gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg libdvdread libdvdnav
-#INSTALACION DE LA SUITE OFIMATICA LIBREOFFICE 
+#LIBREOFFICE SUITE 
 dnf install libreoffice-writer libreoffice-calc libreoffice-base libreoffice-impress libreoffice-langpack-es chromium wget;
