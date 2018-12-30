@@ -68,13 +68,8 @@ else if [[ option==3 ]]; then
 fi
 
 else if [[ option==4 ]]; then
-	echo 'Name of the repository?'
-	read NAME
-	mkdir $NAME
-	cd $NAME
-	git init $NAME
 	echo'Repository url?'
 	read REPO
-	git remote add origin $REPO
+	git clone $REPO
 	echo 'Done'
 fi
