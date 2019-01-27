@@ -1,3 +1,5 @@
+#Dependencies: bleachbit
+#sudo apt-get install bleachbit #Uncomment this line to install them
 rm script.txt;
 apt-get update -y > script.txt; sudo apt-get upgrade -y > script.txt;
 bleachbit --clean apt.*;
