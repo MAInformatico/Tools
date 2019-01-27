@@ -1,4 +1,7 @@
-sudo nmap -sP 192.155.0.0/24 > hosts.txt;
+#Dependencies: nmap, mpack vcgencmd.
+#----------------------------------
+#sudo apt-get install nmap mpack; #Uncomment if you need to install
+sudo nmap -sP <local_broadcast>/24 > hosts.txt;
 sudo mpack -s "Current hosts" /root/hosts.txt your_email@email.com;
 sudo /opt/vc/bin/vcgencmd measure_temp > temperature.txt;
 sudo mpack -s "Server's temperature" /root/temperature.txt your_email@email.com;
