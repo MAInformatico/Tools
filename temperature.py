@@ -9,6 +9,7 @@ currentResult = currentResult[5:9]
 with open('temperature.txt', 'r') as f:
     lineas = [linea.split("=") for linea in f]
 f.close()
+temperatureReaded = ' '
 #reading the file's temperature
 for linea in lineas:
     temperatureReaded = linea[1]
@@ -23,4 +24,3 @@ else:
     f.write ("The temperatue is decreased\n" + temperatureReaded)
 
 f.close()
-
