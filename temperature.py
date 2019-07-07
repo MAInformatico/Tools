@@ -1,5 +1,4 @@
-import os, sys
-import subprocess
+import os, sys, subprocess
 
 #getting the current system temperature
 comand  = "/opt/vc/bin/vcgencmd measure_temp"
@@ -12,15 +11,13 @@ f.close()
 temperatureReaded = ' '
 #reading the file's temperature
 for linea in lineas:
-    temperatureReaded = linea[1]
+    temperatureReaded = linea[0]
 
 #parsing
 temperatureReaded = temperatureReaded[:4]
 
 f = open('temperature.txt', 'a')
 if currentResult > temperatureReaded:
-    f.write ("The temperature is increased\n" + currentResult)
+    f.write ("The temperature is increased, current temperature: \n" + currentResult + "\n")
 else:
-    f.write ("The temperatue is decreased\n" + temperatureReaded)
-
-f.close()
+    f.write ("The temperatue is decreased, current temperature: \n" + currentResult + "\n")
