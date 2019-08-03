@@ -21,3 +21,9 @@ if currentResult > temperatureReaded:
     f.write ("The temperature is increased, current temperature: \n" + currentResult + "\n")
 else:
     f.write ("The temperatue is decreased, current temperature: \n" + currentResult + "\n")
+f.close()
+
+#get an avg
+f=open('history_temperature.txt','a')
+f.write(currentResult + '\n')
+f.close()
