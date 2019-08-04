@@ -17,10 +17,13 @@ for linea in lineas:
 #parsing
 temperatureReaded = temperatureReaded[:4]
 
-f = open('temperature.txt', 'a')
+f = open('temperature.txt', 'w')
 if currentResult > temperatureReaded:
     f.write ("The temperature is increased, current temperature: \n" + currentResult + "\n")
 else:
-    f.write ("The temperatue is decreased, current temperature: \n" + currentResult + "\n")
-    f.write('The average temperature is: '+ avg() + '\n')
+    f.write ("The temperature is decreased, current temperature: \n" + currentResult + "\n")
+f.close()
+
+f = open('history_temperature.txt','a')
+f.write(currentResult + '\n')
 f.close()
