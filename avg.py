@@ -10,4 +10,5 @@ def avg():
 		count+=1
     return str(round(sum/count,2))
 
-#print('The average is: ' + avg() + '\n')
+def show():
+    print('The average is: ' + avg() + '\n')
