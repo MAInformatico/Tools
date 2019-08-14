@@ -12,3 +12,5 @@ def avg():
 
 def show():
     print('The average is: ' + avg() + '\n')
+
+show()
